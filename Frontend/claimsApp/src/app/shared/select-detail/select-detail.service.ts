@@ -21,50 +21,33 @@ interface BenefitDetail {
 })
 export class SelectDetailService {
   public hospitalDetails: Array<HospitalDetail> = [
-    { id: 'H1', name: 'Apollo Hospital', location: 'Delhi-Indraprastha' },
-    { id: 'H2', name: 'Artemis Hospital', location: 'Gurgaon' },
+    { id: 'H100', name: 'Apollo Hospital', location: 'Rajahmundry' },
+    { id: 'H200', name: 'Care Hospital', location: 'Vizag' },
     {
-      id: 'H3',
-      name: 'Fortis Escorts Heart Institute',
-      location: 'Delhi-Okhla',
+      id: 'H300',
+      name: 'Gayathri Hospital',
+      location: 'Vijayawada',
     },
     {
-      id: 'H4',
-      name: 'BLK Super Speciality Hospital',
-      location: 'Delhi-New Delhi',
+      id: 'H400',
+      name: 'Varun Hospitals',
+      location: 'Amaravathi',
     },
-    {
-      id: 'H5',
-      name: 'Max Superspecialty Hospital, Saket',
-      location: 'Delhi-New Delhi',
-    },
-    {
-      id: 'H6',
-      name: 'Fortis Memorial Research Institute',
-      location: 'Gurgaon',
-    },
+    
   ];
 
   public policyDetails: Array<PoilcyDetail> = [
-    { id: 'P1001', name: 'Health Plus Classic' },
-    { id: 'P1002', name: 'Health Plus Enhanced' },
-    { id: 'P1003', name: 'Health Plus Premium' },
+    { id: 'P1001', name: 'Normal Health Policy' },
+    { id: 'P1002', name: 'Premium Health Policy' },
+    { id: 'P1003', name: 'Super Premium Health Policy' },
   ];
 
   public benefitDetails: Array<BenefitDetail> = [
-    { id: 'B101', name: 'Coverage for COVID-19' },
-    { id: 'B102', name: 'Coverage for hospitalization at home' },
-    { id: 'B103', name: 'Ambulance charges upto 2000 covered' },
-    { id: 'B104', name: 'Ambulance charges upto 3000 covered' },
-    { id: 'B105', name: 'Ambulance charges upto 4000 covered' },
-    {
-      id: 'B106',
-      name: 'Hospitalization charges for Premium Twin Sharing room covered',
-    },
-    { id: 'B107', name: 'Hospitalization charges for Deluxe room covered' },
-    {
-      id: 'B108',
-      name: 'Hospitalization charges for Premium Deluxe room covered',
-    },
+    { id: 'B101', name: 'Coverage for Omicron' },
+    { id: 'B102', name: 'Coverage for Dental' },
+    { id: 'B103', name: 'Medical Tests covered' },
+    { id: 'B104', name: 'Hospital Room charges covered' },
+    { id: 'B107', name: 'Health Policy for rare diseases' },
+    {id: 'B108',name: 'New Bron Action Plan Policy'},
   ];
 }
