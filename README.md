@@ -39,8 +39,10 @@ User has to enter his username and password to login. Following credentials can 
 
 | Username   | Password| 
 | -----------|:--------|
-| aayush     | aayush01|
-| ansh       | ansh01  |
+| Vaibhav    | Vaibhav123|
+| Pratik     | Pratik123  |
+| naveen     |bugs1234|
+| Pranjali   |Pranjali123 |
 
 ![alt-text](https://github.com/AayushBangroo/ij025Team3ClaimsManagement/blob/master/Usage%20Images/LoginInput.png)
 
@@ -91,7 +93,7 @@ The users's session will be valid for `30 minutes` after which the user will be 
 
 ## Developers
 
-* [Aayush Bangroo](https://github.com/AayushBangroo)
-* [Ankit Kharb](https://github.com/Ankit-Kharb)
-* [Ansh Gupta](https://github.com/Ansh8382)
-* [Apoorva S Menon](https://github.com/Apoorva-Menon)
+* [Pratik Khandale](https://github.com/pratikkhandale)
+* [Vaibhav Maithani](https://github.com/vaibhavmaithani15)
+* [Sai Naveen Marni](https://github.com/naveenmarni8)
+* [Pranjali Gurav](https://github.com/Gurav-pranjali)
