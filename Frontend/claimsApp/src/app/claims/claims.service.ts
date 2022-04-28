@@ -46,7 +46,7 @@ export class ClaimsService {
   viewStatus(inputFields: { claimID: string }) {
     return this.http
       .get<ClaimStatusResponse>(
-        environment.MEMBER_SERVICE_URL +
+        environment.CLAIM_SERVICE_URL +
           '/getClaimStatus/' +
           inputFields.claimID
       )
@@ -60,6 +60,7 @@ export class ClaimsService {
   }
 
   submitClaim(inputFields: {
+    // claimId:string
     memberId: string;
     policyId: string;
     hospitalId: string;
@@ -67,9 +68,10 @@ export class ClaimsService {
     remarks: number;
     claimAmount: number;
   }) {
+    console.log(inputFields);
     return this.http
       .post<ClaimStatusResponse>(
-        environment.MEMBER_SERVICE_URL + '/submitClaim',
+        environment.CLAIM_SERVICE_URL + '/submitClaim',
         inputFields
       )
       .pipe(

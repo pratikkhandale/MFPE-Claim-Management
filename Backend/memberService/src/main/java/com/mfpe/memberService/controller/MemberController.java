@@ -28,7 +28,6 @@ import lombok.extern.slf4j.Slf4j;
 
 @RestController
 @Slf4j
-@RequestMapping("/memberModule")
 @Api(value = "Member module endpoint")
 @CrossOrigin
 public class MemberController { 

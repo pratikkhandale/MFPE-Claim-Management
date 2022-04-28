@@ -69,11 +69,14 @@ export class ClaimsFormComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    const memberID = form.value.memberID;
 
+    const memberID = form.value.memberID;
+    console.log("Inside on Submit method");
     if (this.isBillMode) {
+      console.log("Inside submit is Bill Mode");
       this.fetchBill(memberID);
     } else if (this.isClaimStatusMode) {
+      console.log("Inside submit is claim status mode")
       this.fetchStatus(form.value.claimID);
     }
 

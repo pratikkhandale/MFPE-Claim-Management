@@ -23,23 +23,15 @@ export class SelectDetailService {
   public hospitalDetails: Array<HospitalDetail> = [
     { id: 'H100', name: 'Apollo Hospital', location: 'Rajahmundry' },
     { id: 'H200', name: 'Care Hospital', location: 'Vizag' },
-    {
-      id: 'H300',
-      name: 'Gayathri Hospital',
-      location: 'Vijayawada',
-    },
-    {
-      id: 'H400',
-      name: 'Varun Hospitals',
-      location: 'Amaravathi',
-    },
-    
+    {id: 'H300', name: 'Gayathri Hospital', location: 'Vijayawada',},
+    {id: 'H400', name: 'Varun Hospitals', location: 'Amaravathi',},
+
   ];
 
   public policyDetails: Array<PoilcyDetail> = [
-    { id: 'P1001', name: 'Normal Health Policy' },
-    { id: 'P1002', name: 'Premium Health Policy' },
-    { id: 'P1003', name: 'Super Premium Health Policy' },
+    { id: 'P100', name: 'Normal Health Policy' },
+    { id: 'P200', name: 'Premium Health Policy' },
+    { id: 'P300', name: 'Super Premium Health Policy' },
   ];
 
   public benefitDetails: Array<BenefitDetail> = [

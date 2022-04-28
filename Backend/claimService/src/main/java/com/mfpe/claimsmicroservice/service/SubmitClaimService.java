@@ -34,6 +34,7 @@ public class SubmitClaimService {
 			if (providerDTO !=null && providerDTO.getProviders() != null) {
 			for (Hospital hospitalDetails : providerDTO.getProviders()) {
 				if (claimDTO.getHospitalId().equalsIgnoreCase(hospitalDetails.getHospitalId())) {
+					log.info("return TRUE");
 					return true;
 				}
 			}
@@ -48,6 +49,7 @@ public class SubmitClaimService {
 		if (benefitsDTO != null &&  benefitsDTO.getBenefits() !=null) {
 		for (Benefits benefits : benefitsDTO.getBenefits()) {
 			if (claimDTO.getBenefitId().equalsIgnoreCase(benefits.getBenefitId())) {
+				log.info("return TRUE");
 				return true;
 			}
 		}
@@ -59,6 +61,7 @@ public class SubmitClaimService {
 		ClaimAmountDTO claimAmountDTO = policyClient
 				.getEligibleAmount(claimDTO.getPolicyId(), claimDTO.getMemberId(), token).getBody();
 		if (claimAmountDTO != null) {
+			log.info("return TRUE");
 		return (claimDTO.getClaimAmount() <= claimAmountDTO.getEligibleAmount());
 		}
 		return false;
@@ -88,11 +91,11 @@ public class SubmitClaimService {
 		Claim claim = new Claim();
 		claim.setClaimId(claimDTO.getClaimId());
 		claim.setBenefitId(claimDTO.getBenefitId());
-		claim.setClaimAmount(claim.getClaimAmount());
+		claim.setClaimAmount(claimDTO.getClaimAmount());
 		claim.setHospitalId(claimDTO.getHospitalId());
 		claim.setMemberId(claimDTO.getMemberId());
 		claim.setPolicyId(claimDTO.getPolicyId());
-		claim.setRemarks(claim.getRemarks());
+		claim.setRemarks(claimDTO.getRemarks());
 		if (hospitalFlag && benefitFlag && amountFlag) {
 			claim.setStatus("Pending Action");
 			claim.setDescription("All the fields are successfully verified! Please wait for furthur action");
@@ -108,6 +111,7 @@ public class SubmitClaimService {
 		}
 		log.info("setting the status : ENDED");
 		if (hospitalFlag && benefitFlag && amountFlag) {
+			
 			claimRepo.save(claim);
 		}
 

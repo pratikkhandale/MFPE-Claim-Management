@@ -30,6 +30,7 @@ export class SubmitClaimFormComponent implements CanComponentLeave {
   }
 
   submitClaim(
+    // claimId:string,
     memberId: string,
     policyId: string,
     hospitalId: string,
@@ -40,6 +41,7 @@ export class SubmitClaimFormComponent implements CanComponentLeave {
     this.isValidating = true;
     this.claimsService
       .submitClaim({
+        // claimId,
         memberId,
         policyId,
         hospitalId,
@@ -63,6 +65,7 @@ export class SubmitClaimFormComponent implements CanComponentLeave {
 
   onSubmit(form: NgForm) {
     this.submitClaim(
+      // form.value.claimId,
       form.value.memberId,
       form.value.policyId,
       form.value.hospitalId,

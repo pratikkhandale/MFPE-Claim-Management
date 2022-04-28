@@ -6,22 +6,19 @@
     <div class="heading">
       <h2 class="heading--highlight highlight">Submit Claim</h2>
     </div>
-
+<!--    <div class="from-group row">-->
+<!--    <div class="col-xs-6 col-md-6 row__content">-->
+<!--      <label for="claimId">Claim Id</label>-->
+<!--      <input type="text" class="form-control" name="claimId" placeholder="Enter claim id" ngModel required #claimId="ngModel"/>-->
+<!--      <span *ngIf="claimId.touched && !claimId.valid" style="color: red">Please enter claim ID</span>-->
+<!--    </div>-->
+<!--    </div>-->
     <div class="from-group row">
+
       <div class="col-xs-6 col-md-6 row__content">
         <label for="memberId">Member Id</label>
-        <input
-          type="text"
-          class="form-control"
-          name="memberId"
-          placeholder="Enter member id"
-          ngModel
-          required
-          #memberId="ngModel"
-        />
-        <span *ngIf="memberId.touched && !memberId.valid" style="color: red"
-          >Please enter member ID</span
-        >
+        <input type="text" class="form-control" name="memberId" placeholder="Enter member id" ngModel required #memberId="ngModel"/>
+        <span *ngIf="memberId.touched && !memberId.valid" style="color: red">Please enter member ID</span>
       </div>
       <div class="col-xs-6 col-md-6 row__content">
         <label for="policyID">Policy Name</label>
