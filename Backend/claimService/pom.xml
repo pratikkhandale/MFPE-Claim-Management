@@ -18,9 +18,9 @@
 		<java.version>1.8</java.version>
 		<spring-cloud.version>2020.0.0</spring-cloud.version>
 		<sonar.host.url>http://localhost:9000</sonar.host.url>
-		<sonar.login>ansh</sonar.login>
-		<sonar.password>ansh8382</sonar.password>
-		<sonar.projectKey>process-pension-microservice</sonar.projectKey>
+		<sonar.login>admin</sonar.login>
+		<sonar.password>1234</sonar.password>
+		<sonar.projectKey>claim-microservice</sonar.projectKey>
 		<jacoco.version>0.8.3</jacoco.version>
 		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
 		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>

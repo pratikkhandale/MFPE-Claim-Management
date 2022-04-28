@@ -3,12 +3,13 @@ package com.mfpe.memberService.dto;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 public class ClaimStatusDTOTest {
 
-    
+    @Mock
     ClaimStatusDTO claimStatusDTO;
     @Test
      void testClaimStatusDTO() {

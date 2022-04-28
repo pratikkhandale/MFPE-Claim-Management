@@ -27,29 +27,5 @@ public class MemberServiceApplication {
 		SpringApplication.run(MemberServiceApplication.class, args);
 	}
 	
-	@Bean
-	public Docket configureSwagger2(){
-		return new Docket(DocumentationType.SWAGGER_2)
-					.select()
-					.paths(PathSelectors.any())
-					.apis(RequestHandlerSelectors.basePackage("com.mfpe.memberService"))
-			
-					.build()
-					.apiInfo(apiInfo());
-				
-	}
-	
-	private ApiInfo apiInfo(){
-		return new ApiInfo(
-				"Member Module",
-				"Claims Management Microservice",
-				"1.0",
-				"MFPE - Programmer Analyst Trainee || Full Stack ...in.linkedin.com",
-				new Contact("MFPE", "something.com","MFPE@cognizant.com"),
-				"FSE", "https://hello.MFPE.com",
-				Collections.emptyList()
-		);
-	}
-	
 
 }

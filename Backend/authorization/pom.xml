@@ -19,7 +19,7 @@
 		<spring-cloud.version>2020.0.0</spring-cloud.version>
 		<sonar.host.url>http://localhost:9000</sonar.host.url>
 		<sonar.login>admin</sonar.login>
-		<sonar.password>admin</sonar.password>
+		<sonar.password>1234</sonar.password>
 		<sonar.projectKey>auth-microservice</sonar.projectKey>
 		<jacoco.version>0.8.3</jacoco.version>
 		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>

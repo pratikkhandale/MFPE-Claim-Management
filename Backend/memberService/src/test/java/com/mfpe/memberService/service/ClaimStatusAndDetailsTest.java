@@ -22,35 +22,34 @@ import com.mfpe.memberService.repository.BillsRepo;
 @SpringBootTest
 public class ClaimStatusAndDetailsTest {
 
-	@MockBean
-    private BillsRepo billsRepo;
-	
-	@InjectMocks
-	ClaimStatusAndDetails claimStatusAndDetails;
+//	@MockBean
+//    private BillsRepo billsRepo;
+//
+//	@InjectMocks
+//	ClaimStatusAndDetails claimStatusAndDetails;
+//
+//
+//
+//
+//    @Test
+//    @DisplayName("Checking if [ClaimStatusAndDetailsTest] class is loading or not.")
+//     void processingRequestIsLoadedOrNot() {
+//        assertThat(claimStatusAndDetails).isNotNull();
+//    }
+//
+//    @DisplayName("Checking if Get Bills Method is working or not")
+//    @Test
+//    void testGetBillsMethod() {
+//    	Date d1 = Date.valueOf("2021-05-04");
+//    	Date d2 = Date.valueOf("2020-06-04");
+//
+//    	Bills bill = new Bills("221","P2314", d1,65600,1200,d2);
+//    	billsRepo.save(bill);
+//        assertThat(billsRepo.findById("221")).isNotNull();
+//    }
 
-    
-    
-	
-    @Test
-    @DisplayName("Checking if [ClaimStatusAndDetailsTest] class is loading or not.")
-     void processingRequestIsLoadedOrNot() {
-        assertThat(claimStatusAndDetails).isNotNull();
-    }
 
-    @DisplayName("Checking if Get Bills Method is working or not")
-    @Test
-    void testGetBillsMethod() {
-    	Date d1 = Date.valueOf("2021-05-04");
-    	Date d2 = Date.valueOf("2020-06-04");
-    	
-    	Bills bill = new Bills("221","P2314", d1,65600,1200,d2);
-    	billsRepo.save(bill);
-        assertThat(billsRepo.findById("221")).isNotNull();
-    }
-    
-  
-   
-    
-    
+
+
+
 }
-    
