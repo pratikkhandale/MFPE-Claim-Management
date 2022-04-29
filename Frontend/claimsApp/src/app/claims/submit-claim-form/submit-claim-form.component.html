@@ -1,3 +1,4 @@
+<div class="back">
 <div class="container">
   <div class="spinner" *ngIf="isValidating" class="spinner">
     <app-loading-spinner></app-loading-spinner>
@@ -131,4 +132,5 @@
     *ngIf="error"
     (close)="handleError()"
   ></app-alert>
+</div>
 </div>

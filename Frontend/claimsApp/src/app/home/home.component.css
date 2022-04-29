@@ -1,7 +1,9 @@
+
 h1 {
   font-size: 55px;
   line-height: 1.35;
   font-weight: 600;
+  margin-top: 186px;
 }
 
 h4 {
@@ -11,9 +13,19 @@ h4 {
 }
 
 .container {
-  margin: 130px 100px 0px 130px;
+  margin: 130px 100px 0px 130px; 
 }
-
+.back
+{
+  background-image: url("../../assets/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  margin-top: -8.9%;
+  margin-left: -2%;
+  margin-right: -2%;
+  height: 756px;
+}
 .header__title {
   padding-bottom: 160px;
 }
@@ -126,12 +138,11 @@ h4 {
 
 /* footer */
 .footer {
-  padding: 80px 30px 40px 30px;
-  background-color: #37383d;
-  width: 100%;
-  position: absolute;
-  bottom: -450px;
-  left: 0;
+  
+  background-color: #3491b2;
+    width: 100%;
+    position: absolute;
+    bottom: -241px;
 }
 
 .footer__nav {
@@ -171,10 +182,11 @@ h4 {
 .logo {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-top: -110px;
 }
 
 .brand-logo {
+  margin-top: 113px;
   height: 120px;
   width: auto;
   text-align: center;
