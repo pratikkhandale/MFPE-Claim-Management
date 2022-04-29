@@ -53,7 +53,7 @@ User has to enter his username and password to login. Following credentials can 
 
 Authenticated users can now access the features of the application from the navigation bar under their username.
 
-![alt-text](https://github.com/pratikkhandale/MFPE-Claim-Management/blob/main/Usage%20Images/loginPortal.jpeg)
+![alt-text](https://github.com/pratikkhandale/MFPE-Claim-Management/blob/main/Usage%20Images/nav.jpeg)
 
 
 
@@ -79,7 +79,7 @@ If a user wishes to submit a claim, the submit claim form can be used where the 
 The user can view the claim status at any time using the `Claim ID` generated in the previous step using the Claim status portal.
 
 
-![alt-text](https://github.com/AayushBangroo/ij025Team3ClaimsManagement/blob/master/Usage%20Images/ClaimStatus.png)
+![alt-text](https://github.com/pratikkhandale/MFPE-Claim-Management/blob/main/Usage%20Images/ClaimStatus.jpeg)
 
 
 ## Session Expiration
@@ -87,7 +87,7 @@ The user can view the claim status at any time using the `Claim ID` generated in
 
 The users's session will be valid for `30 minutes` after which the user will be prompted to login again.
 
-![alt-text](https://github.com/AayushBangroo/ij025Team3ClaimsManagement/blob/master/Usage%20Images/SessionExpired.png)
+![alt-text](https://github.com/pratikkhandale/MFPE-Claim-Management/blob/main/Usage%20Images/expire.jpeg)
 
 
 
