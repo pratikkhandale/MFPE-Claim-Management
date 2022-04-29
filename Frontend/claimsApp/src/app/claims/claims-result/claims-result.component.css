@@ -1,5 +1,5 @@
 .parent {
-  height: 80vh;
+  height: 89vh;
   display: flex;
   align-items: center;
 }
@@ -7,7 +7,7 @@
 .container {
   height: 66vh;
   width: 40vw;
-  border: 1px solid lightgray;
+  border: 5px solid #7d7b7b;
   border-radius: 8%;
 }
 

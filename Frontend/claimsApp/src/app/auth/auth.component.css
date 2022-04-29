@@ -4,7 +4,7 @@ button {
 }
 .btn btn-primary
 {
-  background-color: #AA2EC6;
+  background-color: #3491b2;
 }
 
 input.ng-invalid.ng-touched {
@@ -21,10 +21,14 @@ h2 {
   font-size: 40px;
   display: inline-block;
 }
-
+.back
+{
+  background-image: linear-gradient(to bottom right, #d5ecf1, #90c9d5, #d4dcff,#3491b2);
+}
 .container {
-  height: 75vh;
+  height: 94vh;
   width: 100vw;
+  
 }
 
 .row {
@@ -36,7 +40,7 @@ h2 {
 
 .row__content {
   height: 90%;
-  border: 1px solid rgb(209, 209, 209);
+  border: 5px solid rgb(149 146 146);
   padding: 40px;
   border-radius: 8%;
   position: relative;
